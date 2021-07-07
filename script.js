@@ -29,10 +29,17 @@ if (isNaN(numberChar)) {
   //change if statements
 if (numberChar < 8) {
   alert ("Password length must be at leaset 8 characters");
-}
+} 
+
+
 if (numberChar > 128) {
   alert ("Password length must be less than 129 characters");
 }
+
+
+
+
+if (!isNaN(numberChar) & numberChar >= 8 & numberChar <= 128) {
 
   //Returns true or false
 var lowerCase = confirm ("Would you like to include lowercase characters?", 
@@ -82,7 +89,7 @@ if (lowerCase == true || uppercase == true || special == true || numbers == true
   
   return finalPassword;
 }
-
+}
 }
 
 function getOutputPassword(lengthVal, charCombine) {
